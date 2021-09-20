@@ -5,13 +5,11 @@ icon1.onclick = function change() {
     element.classList.toggle("dark-theme");
   
     if (element.classList.contains("dark-theme")) {
-icon.src = "img/off.png";
    //if class was added to body
       localStorage.setItem("body", "dark-theme");
    //save information in "background" localStorage variable, use dark-mode class name
     } else {
       localStorage.setItem("body", "");
-icon.src = "img/on.png";
   //if class was removed set background" localStorage variable to null
     }
   }
